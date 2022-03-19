@@ -7,13 +7,15 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;1,400&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 
     </head>
   <body>
     <section class="header"> 
       <nav>
       <a href="index.html"><img src="img/BBMLogo2.png"></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">HOME</a> </li>
             <li><a href="">ABOUT</a> </li>
@@ -23,16 +25,93 @@
         
 
       </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <div class="text-box">
       <h1> Waist Beads</h1>
-      <p> Waist beads are a traditional body adornment, that consist of small glass beads on a string worn around the waist or hips. They come in different colors and shapes and may also include decorative stones, crystals, or charms </p>
+      <p> Waist beads are a traditional body adornment, that consist of small glass beads on a string worn around the waist or hips. <br>They come in different colors and shapes and may also include decorative stones, crystals, or charms </p>
+      <a href="" class="hero-wst">Click Here To Learn More</a>
 
 
     </div> 
 
-
     </section>
+<!--About-->
+
+<section class="about">
+  <h1>About Beaded By Melissa </h1>
+  <p></p>
+
+  <div class="row">
+    <div class="about-col">
+      <h3></h3>
+      <p></p>
+  </div>
+    <div class="about-col">
+      <h3></h3>
+      <p></p>   
+  </div>    
+  
+    <div class="about-col">
+      <h3></h3>
+        <p></p>  
+    </div>   
+    
+  </section>
+
+  <!--service-->
+  <section class="service">
+    <h1>Our Services</h1>
+    <p></p>
+
+    <div class="row">
+      <div class="service-col">
+        <img src="img/goldbeads.jpg">
+        <div class="layer">
+          <h3>Waist Beads</h3>
+        </div>
+      </div>
+
+      <div class="service-col">
+        <img src="img/goldbeads.jpg">
+        <div class="layer">
+          <h3>Waist Beads</h3>
+        </div>
+      </div>
+
+      <div class="service-col">
+        <img src="img/goldbeads.jpg">
+        <div class="layer">
+          <h3>Waist Beads</h3>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  
+    </div>
+
+
+  </div>
+
+</section>
+
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      
+      }
+    </script>
    
   </body>  
 </html>
